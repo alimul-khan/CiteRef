@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page with Data Table</title>
+    <style>
+        /* Add CSS for table borders */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Table Example</h1>
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>Info</th>
+                <th>Keywords</th>
+                <th>Paper Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Publishers</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table data will be dynamically added here -->
+        </tbody>
+    </table>
+    <button id="add-row">Add Row</button>
+    <div id="input-fields" style="display: none;">
+        <input type="text" id="info-input" placeholder="Info">
+        <input type="text" id="keywords-input" placeholder="Keywords (comma-separated)">
+        <input type="text" id="paper-title-input" placeholder="Paper Title">
+        <input type="text" id="author-input" placeholder="Author">
+        <input type="number" id="year-input" placeholder="Year">
+        <input type="text" id="publishers-input" placeholder="Publishers">
+        <button id="save-button">Save</button>
+    </div>
+    <script src="update.js"></script>
+</body>
+</html>
